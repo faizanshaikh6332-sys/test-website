@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE08B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#996515;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE08B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#996515;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="200" fill="#050505"/>
+  
+  <!-- Golden thick circular border -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  
+  <!-- Diamond -->
+  <polygon points="100,50 135,85 100,120 65,85" fill="none" stroke="url(#gold2)" stroke-width="1.5"/>
+  
+  <!-- Tooth / Implant -->
+  <!-- Crown -->
+  <path d="M 88 70 C 84 70 81 74 81 79 C 81 85 86 90 91 91.5 C 93 92 94.5 94 94.5 97 L 105.5 97 C 105.5 94 107 92 109 91.5 C 114 90 119 85 119 79 C 119 74 116 70 112 70 C 106 70 102.5 75 100 78 C 97.5 75 94 70 88 70 Z" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <!-- Screw Body -->
+  <path d="M 94.5 99 L 105.5 99 L 102 113 L 98 113 Z" fill="none" stroke="url(#gold)" stroke-width="2"/>
+  <!-- Screw Threads -->
+  <line x1="93" y1="102" x2="107" y2="102" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="94" y1="106" x2="106" y2="106" stroke="url(#gold)" stroke-width="2"/>
+  <line x1="96" y1="110" x2="104" y2="110" stroke="url(#gold)" stroke-width="2"/>
+
+  <!-- Text: i Dentist -->
+  <text x="100" y="145" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="white" text-anchor="middle" letter-spacing="1">i Dentist</text>
+  
+  <!-- Text: DENTAL IMPLANT CENTER -->
+  <text x="100" y="162" font-family="'Inter', Arial, sans-serif" font-size="8" fill="url(#gold)" text-anchor="middle" letter-spacing="2">DENTAL IMPLANT CENTER</text>
+</svg>
