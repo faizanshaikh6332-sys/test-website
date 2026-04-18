@@ -154,8 +154,8 @@ export default function Hero() {
             className="mt-10 flex flex-wrap items-center gap-6"
           >
             {[
-              { num: '500+', label: 'Implants Done' },
-              { num: '10+', label: 'Years Experience' },
+              { num: '1500+', label: 'Implants Done' },
+              { num: '15+', label: 'Years Experience' },
               { num: '100%', label: 'Painless Care' },
             ].map((stat) => (
               <div key={stat.label} className="flex items-center gap-3">

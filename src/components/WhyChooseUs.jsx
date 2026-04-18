@@ -125,10 +125,10 @@ export default function WhyChooseUs() {
           className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-6"
         >
           {[
-            { num: '500+', label: 'Successful Implants', icon: '🦷' },
+            { num: '1500+', label: 'Successful Implants', icon: '🦷' },
             { num: '4.8★', label: 'Google Rating', icon: '⭐' },
             { num: '160+', label: 'Verified Reviews', icon: '📝' },
-            { num: '10+', label: 'Years of Excellence', icon: '🏆' },
+            { num: '15+', label: 'Years of Excellence', icon: '🏆' },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-5 bg-white/5 border border-white/10 rounded-2xl">
               <div className="text-3xl mb-1" aria-hidden="true">{stat.icon}</div>
