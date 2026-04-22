@@ -65,7 +65,7 @@ export default function Doctor() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-sky-100">
               <img
                 src="/doctor.jpg"
-                alt="Dr. Prashant Raktade - Oral & Maxillofacial Surgeon, Advanced Implantology Specialist at Dr. Raktade Dental Implant Center, Chhatrapati Sambhajinagar (Aurangabad)"
+                alt="Dr. Prashant Raktade - Oral & Maxillofacial Surgeon, Advanced Implantology Specialist at Dr. Raktade Dental Implant Center, Chhatrapati Sambhajinagar"
                 className="w-full h-[500px] lg:h-[560px] object-cover object-top"
                 loading="lazy"
                 onError={(e) => {
@@ -159,7 +159,7 @@ export default function Doctor() {
               </h3>
               <div className="flex items-center gap-2 mt-2 text-slate-500 text-sm">
                 <MapPin size={14} className="text-sky-500 flex-shrink-0" />
-                Chhatrapati Sambhajinagar (Aurangabad), Maharashtra
+                Chhatrapati Sambhajinagar, Maharashtra
               </div>
             </div>
 
@@ -258,6 +258,96 @@ export default function Doctor() {
           </motion.div>
 
         </div>
+
+        {/* ── Our Team ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="mt-20"
+        >
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
+              <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" aria-hidden="true" />
+              Our Team
+            </div>
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-slate-800"
+              style={{ fontFamily: 'Outfit, sans-serif' }}
+            >
+              Meet Our{' '}
+              <span className="gradient-text">Expert Doctors</span>
+            </h2>
+            <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
+              A dedicated team of specialists committed to delivering the highest standard of dental care.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[
+              {
+                name: 'Dr. Snehal Prashant Raktade',
+                degree: 'MDS Prosthodontist',
+                specialty: 'Crowns & Bridge',
+                avatar: 'SR',
+                color: 'from-sky-500 to-blue-600',
+                photo: '/team-snehal.jpg',
+              },
+              {
+                name: 'Dr. Shubhangi Shivhar Gajmal',
+                degree: 'BDS',
+                specialty: 'Root Canal Specialist',
+                avatar: 'SG',
+                color: 'from-teal-500 to-emerald-600',
+                photo: '/team-shubhangi.jpg',
+              },
+              {
+                name: 'Dr. Aditi Anjinkya Ghule',
+                degree: 'BDS',
+                specialty: 'General Dentistry',
+                avatar: 'AG',
+                color: 'from-violet-500 to-purple-600',
+                photo: '/team-aditi.jpg',
+              },
+            ].map((doc, i) => (
+              <motion.div
+                key={doc.name}
+                initial={{ opacity: 0, y: 25 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.5 + i * 0.12, duration: 0.55 }}
+                className="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+              >
+                {/* Photo / Avatar area */}
+                <div className={`relative aspect-[3/4] bg-gradient-to-br ${doc.color} flex items-center justify-center overflow-hidden`}>
+                  <img
+                    src={doc.photo}
+                    alt={doc.name}
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    loading="lazy"
+                    onError={(e) => { e.target.style.display = 'none' }}
+                  />
+                  {/* Fallback avatar shown behind image — visible if image fails */}
+                  <div className="relative z-0 text-white font-black text-4xl opacity-30 select-none" style={{ fontFamily: 'Outfit, sans-serif' }}>
+                    {doc.avatar}
+                  </div>
+                  {/* Bottom gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" aria-hidden="true" />
+                </div>
+
+                {/* Info */}
+                <div className="p-6">
+                  <h3 className="font-bold text-slate-800 text-base leading-snug mb-1" style={{ fontFamily: 'Outfit, sans-serif' }}>
+                    {doc.name}
+                  </h3>
+                  <div className="text-sky-600 text-xs font-semibold mb-0.5">{doc.degree}</div>
+                  <div className="text-slate-500 text-sm">{doc.specialty}</div>
+                  <div className={`mt-4 h-1 w-12 rounded-full bg-gradient-to-r ${doc.color} group-hover:w-full transition-all duration-500`} aria-hidden="true" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
       </div>
     </section>
   )

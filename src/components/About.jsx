@@ -26,7 +26,7 @@ export default function About() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-sky-100">
               <img
                 src="/about-doctor.jpg"
-                alt="Dr. Prashant Raktade performing dental implant procedure at the clinic in Chhatrapati Sambhajinagar (Aurangabad)"
+                alt="Dr. Prashant Raktade performing dental implant procedure at the clinic in Chhatrapati Sambhajinagar"
                 className="w-full h-[460px] lg:h-[560px] object-cover"
                 loading="lazy"
               />
@@ -60,11 +60,10 @@ export default function About() {
             >
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm" style={{ fontFamily: 'Outfit, sans-serif' }}>4.8★</span>
+                  <span className="text-white font-bold text-sm" style={{ fontFamily: 'Outfit, sans-serif' }}>5.0★</span>
                 </div>
-                <div>
-                  <div className="font-bold text-slate-800 text-sm">Google Rating</div>
-                  <div className="text-slate-500 text-xs">160+ Reviews</div>
+                <div className="flex items-center">
+                  <div className="font-bold text-slate-800 text-sm">On Google Rating</div>
                 </div>
               </div>
             </motion.div>
@@ -82,7 +81,7 @@ export default function About() {
           >
             <div className="inline-flex items-center gap-2 bg-sky-50 text-sky-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
               <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" aria-hidden="true" />
-              About Dr. Raktade Dental Implant Center
+              About Dr.Raktade
             </div>
 
             <h2
@@ -94,16 +93,8 @@ export default function About() {
               <span className="gradient-text">Personal Touch</span>
             </h2>
 
-            <p className="text-slate-600 text-base leading-relaxed mb-4">
-              At Dr. Raktade Dental Implant Center, we specialize in transforming smiles through
-              advanced dental implant procedures. Located in CIDCO, Chhatrapati Sambhajinagar (Aurangabad), our
-              clinic is led by <strong>Dr. Prashant Raktade</strong> — a highly skilled implant specialist
-              committed to providing technically correct, timely, and genuinely painless dental care.
-            </p>
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              We believe dental care should feel reassuring, not stressful. Every patient receives a
-              thorough diagnosis, a clear explanation of their treatment plan, and attentive follow-up
-              support — because your smile is a long-term commitment we take seriously.
+              Our clinic is led by <strong>Dr. Prashant Raktade</strong> — a highly skilled implant specialist along with his team our team is led by Dr.Prashant Raktade and his team of Doctors committed to providing technically correct, timely, and genuinely painless dental care.
             </p>
 
             {/* Highlights grid */}

@@ -1,63 +1,60 @@
 import { useState, useRef, useCallback } from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
-import {
-  Stethoscope, Layers, Scissors, Activity, Sparkles,
-  Eye, Droplets, HeartPulse, MoveHorizontal
-} from 'lucide-react'
+import { MoveHorizontal } from 'lucide-react'
 
 const services = [
   {
-    icon: Stethoscope,
+    icon: '🦷',
     title: 'Dental Implants',
     desc: 'Permanent, natural-looking tooth replacements using cutting-edge implant technology. Restore function and confidence.',
     tag: 'Most Popular',
     color: 'from-sky-500 to-blue-600',
   },
   {
-    icon: Layers,
+    icon: '😁',
     title: 'Full Mouth Dental Implants',
     desc: 'Complete smile restoration for patients with multiple missing teeth. Transform your entire bite in targeted sessions.',
     tag: 'Specialized',
     color: 'from-teal-500 to-emerald-600',
   },
   {
-    icon: Scissors,
+    icon: '🔧',
     title: 'Tooth Extraction',
     desc: 'Safe and painless extraction using advanced techniques that minimize discomfort and speed up recovery.',
     tag: '',
     color: 'from-indigo-500 to-violet-600',
   },
   {
-    icon: Activity,
+    icon: '🩺',
     title: 'Root Canal Treatment',
     desc: 'Eliminate tooth pain and save your natural tooth with our precise, gentle root canal procedures.',
     tag: '',
     color: 'from-rose-500 to-pink-600',
   },
   {
-    icon: Sparkles,
+    icon: '✨',
     title: 'Smile Design',
     desc: 'Customized cosmetic planning that combines aesthetics and function to give you the perfect smile.',
     tag: '',
     color: 'from-amber-500 to-orange-500',
   },
   {
-    icon: Eye,
+    icon: '💎',
     title: 'Cosmetic Dentistry',
     desc: 'From veneers to teeth whitening — our cosmetic treatments deliver stunning, lasting aesthetic results.',
     tag: '',
     color: 'from-purple-500 to-violet-600',
   },
   {
-    icon: Droplets,
+    icon: '🫧',
     title: 'Teeth Cleaning',
     desc: 'Professional scaling and polishing to maintain healthy gums, remove plaque, and freshen your breath.',
     tag: '',
     color: 'from-cyan-500 to-sky-600',
   },
   {
-    icon: HeartPulse,
+    icon: '❤️',
     title: 'General Dental Treatment',
     desc: 'Comprehensive care including fillings, crowns, bridges, and routine checkups to keep your smile healthy.',
     tag: '',
@@ -74,7 +71,7 @@ const beforeAfterGallery = [
   {
     before: '/before-2.jpg',
     after: '/after-2.jpg',
-    label: 'implants',
+    label: 'Happy Smile',
   },
   {
     before: '/before-3.jpg',
@@ -228,7 +225,6 @@ function ShutterSlider({ before, beforeAlt, after, afterAlt, label }) {
 
 /* ── Service Card ─────────────────────────────────────────── */
 function ServiceCard({ service, index, inView }) {
-  const Icon = service.icon
   return (
     <motion.article
       initial={{ opacity: 0, y: 30 }}
@@ -245,16 +241,13 @@ function ServiceCard({ service, index, inView }) {
         className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
         aria-hidden="true"
       >
-        <Icon size={24} className="text-white" />
+        <span className="text-2xl leading-none select-none" role="img">{service.icon}</span>
       </div>
       <h3 className="font-bold text-slate-800 text-base mb-2" style={{ fontFamily: 'Outfit, sans-serif' }}>
         {service.title}
       </h3>
       <p className="text-slate-500 text-sm leading-relaxed">{service.desc}</p>
-      <div className="mt-4 flex items-center gap-1 text-sky-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <span>Learn more</span>
-        <span aria-hidden="true">→</span>
-      </div>
+
     </motion.article>
   )
 }
@@ -290,7 +283,7 @@ export default function Services() {
           </h2>
           <p className="text-slate-500 text-base max-w-2xl mx-auto leading-relaxed">
             From single implants to full smile transformations — Dr. Raktade provides expert, painless,
-            and technically precise dental treatments in Chhatrapati Sambhajinagar (Aurangabad).
+            and technically precise dental treatments in Chhatrapati Sambhajinagar.
           </p>
         </motion.div>
 
@@ -301,105 +294,6 @@ export default function Services() {
           ))}
         </div>
 
-        {/* ── Comprehensive All Services ── */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-16"
-        >
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 bg-teal-50 text-teal-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-3">
-              <span className="w-2 h-2 rounded-full bg-teal-500" aria-hidden="true" />
-              Complete Treatment Menu
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-800" style={{ fontFamily: 'Outfit, sans-serif' }}>
-              All Services at <span className="gradient-text">Dr. Raktade Dental</span>
-            </h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {/* 🦷 General Dental */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">🦷</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>General Dental Services</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['Tooth Whitening', 'Complete Denture', 'Crowns & Bridges', 'Emax Crowns', 'Laminates', 'Veneers', 'Zirconia Crowns', 'Root Canals', 'Teeth Cleaning', 'Teeth Reshaping', 'X-ray', 'RCT', 'Braces', 'Dental Implant', 'Bonding', 'Fillings & Sealants', 'Laser Dentistry', 'Mouth Guards', 'Emergency Care', 'Extractions', 'Dentures & Bridges', 'Paediatrics', 'Oral Surgery'].map(s => (
-                  <span key={s} className="text-xs bg-sky-50 text-sky-700 border border-sky-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* 🦷 Full Mouth Implants */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">🦷</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>Advanced Implant Services</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['Full Mouth Dental Implants', 'All-on-4 Dental Implants', 'All-on-6 Dental Implants', 'Immediate Dental Implants', 'Single Tooth Implant', 'Basal Dental Implants', 'Zygomatic Dental Implants', 'Implant Supported Dentures', 'Bone Grafting', 'Sinus Lift Surgery', 'Cosmetic Procedures'].map(s => (
-                  <span key={s} className="text-xs bg-teal-50 text-teal-700 border border-teal-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* 👨‍⚕️ Oral Surgeon */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">👨‍⚕️</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>Oral Surgeon Services</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['Cyst Removal', 'Facial Bone Fracture', 'Jaw Fracture', 'Lip Tear Repair', 'Maxillofacial Surgery', 'Third Molar Removal', 'TMJ Specialist', 'Orthognathic Surgery', 'Jaw Fracture Treatment', 'Oral Cancer Surgery', 'Impacted Wisdom Tooth Removal'].map(s => (
-                  <span key={s} className="text-xs bg-indigo-50 text-indigo-700 border border-indigo-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* 😁 Orthodontics */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">😁</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>Orthodontic Treatment</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['Ceramic Braces', 'Lingual Orthodontics', 'Clear Aligners', 'Metal Braces', 'Teeth Aligners'].map(s => (
-                  <span key={s} className="text-xs bg-violet-50 text-violet-700 border border-violet-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* 🧼 Dental Hygiene & Whitening */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">✨</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>Hygiene & Whitening</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['Gum Surgery', 'Teeth Whitening', 'Bleaching of Teeth', 'Scaling & Polishing', 'Teeth Pearls', 'Gum Disease Treatment'].map(s => (
-                  <span key={s} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-            {/* 🩻 Radiology & Cosmetics */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl" aria-hidden="true">🩻</span>
-                <h3 className="font-bold text-slate-800 text-base" style={{ fontFamily: 'Outfit, sans-serif' }}>Radiology & Cosmetics</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {['X-ray of Jaw Bones', 'X-ray of Tooth', 'Smile Design', 'Cosmetic Dentistry', 'Dental Photography', 'CBCT Scan', 'Online Appointment'].map(s => (
-                  <span key={s} className="text-xs bg-rose-50 text-rose-700 border border-rose-100 px-2.5 py-1 rounded-full font-medium">{s}</span>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </motion.div>
 
         {/* Before & After — Shutter Sliders */}
         <motion.div

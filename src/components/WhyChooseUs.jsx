@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
             </span>
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed">
-            We go beyond dentistry — we build trust, comfort, and lasting relationships with every patient who walks through our doors in CIDCO, Chhatrapati Sambhajinagar (Aurangabad).
+            We go beyond dentistry — we build trust, comfort, and lasting relationships with every patient who walks through our doors in CIDCO, Chhatrapati Sambhajinagar.
           </p>
         </motion.div>
 
@@ -126,8 +126,8 @@ export default function WhyChooseUs() {
         >
           {[
             { num: '1500+', label: 'Successful Implants', icon: '🦷' },
-            { num: '4.8★', label: 'Google Rating', icon: '⭐' },
-            { num: '160+', label: 'Verified Reviews', icon: '📝' },
+            { num: '5.0★', label: 'Google Rating', icon: '⭐' },
+            { num: '100K+', label: 'Verified Reviews', icon: '📝' },
             { num: '15+', label: 'Years of Excellence', icon: '🏆' },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-5 bg-white/5 border border-white/10 rounded-2xl">

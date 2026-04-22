@@ -6,7 +6,7 @@ import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
 const testimonials = [
   {
     name: 'Dnyanster',
-    location: 'Chhatrapati Sambhajinagar (Aurangabad)',
+    location: 'Chhatrapati Sambhajinagar',
     rating: 5,
     review:
       'I recently underwent placement of two dental implants, and I am extremely happy with the entire experience. The procedure was explained clearly, done with great precision, and completely painless. The doctor\'s expertise, calm approach, and attention to detail gave me a lot of confidence. The clinic is very clean, well-equipped, and the staff is polite and supportive. Post-treatment follow-up was excellent, and I\'m already feeling comfortable and confident with my new teeth. I truly appreciate the professionalism and care provided and would highly recommend this clinic to anyone looking for quality dental implant treatment.',
@@ -16,33 +16,53 @@ const testimonials = [
   },
   {
     name: 'Surwase Sandeep',
-    location: 'Chhatrapati Sambhajinagar (Aurangabad)',
+    location: 'Chhatrapati Sambhajinagar',
     rating: 5,
     review:
-      'I underwent a full mouth dental implant treatment with Dr. Prashant Raktade, and today it has been one complete year of follow-up—I can confidently say it was one of the best decisions of my life. best dental clinic in Chhatrapati Sambhajinagar (Aurangabad) From detailed planning to flawless execution, every step was handled with exceptional skill, patience, and care. The implants feel completely natural—no pain, no discomfort, and perfect chewing efficiency even after a year. My confidence, smile, and quality of life have improved tremendously. Dr. Raktade\'s meticulous approach, honest guidance, and calm reassurance made a complex procedure feel smooth and stress-free. The clinic maintains excellent hygiene, advanced technology, and a very supportive staff. Even after one year, the results are stable, strong, and aesthetically perfect. This truly reflects the doctor\'s expertise and long-term treatment vision. I highly recommend Dr. Raktade Dental Implant Center to anyone considering dental implants. God truly works through such skilled hands. 🙏',
+      'I underwent a full mouth dental implant treatment with Dr. Prashant Raktade, and today it has been one complete year of follow-up—I can confidently say it was one of the best decisions of my life. best dental clinic in Chhatrapati Sambhajinagar From detailed planning to flawless execution, every step was handled with exceptional skill, patience, and care. The implants feel completely natural—no pain, no discomfort, and perfect chewing efficiency even after a year. My confidence, smile, and quality of life have improved tremendously. Dr. Raktade\'s meticulous approach, honest guidance, and calm reassurance made a complex procedure feel smooth and stress-free. The clinic maintains excellent hygiene, advanced technology, and a very supportive staff. Even after one year, the results are stable, strong, and aesthetically perfect. This truly reflects the doctor\'s expertise and long-term treatment vision. I highly recommend Dr. Raktade Dental Implant Center to anyone considering dental implants. God truly works through such skilled hands. 🙏',
     treatment: 'Full Mouth Implants',
     avatar: 'S',
     color: 'from-teal-500 to-emerald-600',
   },
   {
     name: 'shubham malande',
-    location: 'Chhatrapati Sambhajinagar (Aurangabad)',
+    location: 'Chhatrapati Sambhajinagar',
     rating: 5,
     review:
-      'Good treatment, all staf is supoted. drocter is very carfully treatment all working day. best dental clinic in Chhatrapati Sambhajinagar (Aurangabad) and world class facilities in Chhatrapati Sambhajinagar (Aurangabad).Dr.Raktade is very good person.',
+      'Good treatment, all staf is supoted. drocter is very carfully treatment all working day. best dental clinic in Chhatrapati Sambhajinagar and world class facilities in Chhatrapati Sambhajinagar.Dr.Raktade is very good person.',
     treatment: 'General Dental Treatment',
     avatar: 'S',
     color: 'from-violet-500 to-purple-600',
   },
   {
-    name: 'DNYANSTER',
-    location: 'Chhatrapati Sambhajinagar (Aurangabad)',
+    name: 'Nagesh Pasarate',
+    location: 'Chhatrapati Sambhajinagar',
     rating: 5,
     review:
-      'I recently underwent placement of two dental implants, and I am extremely happy with the entire experience. The procedure was explained clearly, done with great precision, and completely painless. The doctor\'s expertise, calm approach, and attention to detail gave me a lot of confidence. best dental implants in Chhatrapati Sambhajinagar (Aurangabad) Dr.Raktade is very friendly. The clinic is very clean, well-equipped, and the staff is polite and supportive. Post-treatment follow-up was excellent, and I\'m already feeling comfortable and confident with my new teeth. I truly appreciate the professionalism and care provided and would highly recommend this clinic to anyone looking for quality dental implant treatment.',
+      'I had been suffering from severe toothache and multiple missing teeth for almost 20 years. Dr. Raktade sir planned my case meticulously and performed 4 dental implants and root canal treatments. Today after 6 months I have absolutely no issues — I feel confident, pain free, and truly happy with the outcome of treatment. I am finally writing this very positive review for Dr. Raktade Dental Implant Center. Now I truly believe sometimes god exists in the form of doctors.',
     treatment: 'Dental Implants',
-    avatar: 'D',
-    color: 'from-rose-500 to-pink-600',
+    avatar: 'N',
+    color: 'from-sky-500 to-cyan-600',
+  },
+  {
+    name: 'Mamta Patil',
+    location: 'Chhatrapati Sambhajinagar',
+    rating: 5,
+    review:
+      'Good dentists go to great lengths to make their patients comfortable and relaxed without pain. Good communicator. Very good experience 👍',
+    treatment: 'General Dental Care',
+    avatar: 'M',
+    color: 'from-pink-500 to-rose-500',
+  },
+  {
+    name: 'Harish Katare',
+    location: 'Chhatrapati Sambhajinagar',
+    rating: 5,
+    review:
+      'I visited for the first time — the staff was very helpful and the treatment is good. I have seen so much result in my teeth. Thank you sir 😊',
+    treatment: 'Teeth Treatment',
+    avatar: 'H',
+    color: 'from-amber-500 to-orange-500',
   },
 ]
 
@@ -94,7 +114,7 @@ export default function Reviews() {
           {/* Google Rating badge */}
           <div className="inline-flex items-center gap-4 bg-gradient-to-r from-sky-50 to-teal-50 border border-sky-100 rounded-2xl px-6 py-4 shadow-sm">
             <div className="text-center">
-              <div className="text-4xl font-black text-slate-800" style={{ fontFamily: 'Outfit, sans-serif' }}>4.8</div>
+              <div className="text-4xl font-black text-slate-800" style={{ fontFamily: 'Outfit, sans-serif' }}>5.0</div>
               <div className="text-xs text-slate-500 font-medium">Google Rating</div>
             </div>
             <div className="w-px h-12 bg-slate-200" aria-hidden="true" />
@@ -104,7 +124,7 @@ export default function Reviews() {
                   <Star key={i} size={20} className="text-amber-400 fill-amber-400" aria-hidden="true" />
                 ))}
               </div>
-              <div className="text-sm text-slate-600 font-medium">Based on <strong>160 Reviews</strong></div>
+              <div className="text-sm text-slate-600 font-medium">Verified Google Reviews</div>
             </div>
             <div className="w-px h-12 bg-slate-200" aria-hidden="true" />
             <div>

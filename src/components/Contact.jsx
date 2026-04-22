@@ -3,8 +3,8 @@ import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { MapPin, Clock, Phone, MessageCircle, Mail, CheckCircle, Send } from 'lucide-react'
 
-const PHONE = '+919404343961'
-const WHATSAPP_NUMBER = '919404343961'
+const PHONE = '+919604881999'
+const WHATSAPP_NUMBER = '919604881999'
 
 const infoItems = [
   {
@@ -14,7 +14,7 @@ const infoItems = [
       'Shop No. 2, Shreeji Towers,',
       'Jai Bhavani Rd, Kamgar Chowk,',
       'N 2, Cidco,',
-      'Chhatrapati Sambhajinagar (Aurangabad),',
+      'Chhatrapati Sambhajinagar,',
       'Maharashtra 431003',
     ],
     color: 'from-sky-500 to-blue-600',
@@ -31,7 +31,7 @@ const infoItems = [
   {
     icon: Phone,
     title: 'Call Us',
-    lines: ['+91 94043 43961'],
+    lines: ['+91 96048 81999'],
     link: `tel:${PHONE}`,
     color: 'from-violet-500 to-purple-600',
   },
@@ -75,7 +75,7 @@ export default function Contact() {
             <span className="gradient-text">Today</span>
           </h2>
           <p className="text-slate-500 text-base max-w-xl mx-auto">
-            Visit us at CIDCO, Chhatrapati Sambhajinagar (Aurangabad) or reach out directly — we're here to help you smile with confidence.
+            Visit us at CIDCO, Chhatrapati Sambhajinagar or reach out directly — we're here to help you smile with confidence.
           </p>
         </motion.div>
 
@@ -137,7 +137,31 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* Map embed */}
+            {/* Google QR Code */}
+            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-center gap-6">
+              <img
+                src="/google-qr.png"
+                alt="Scan QR code to find Dr. Raktade Dental Implant Center on Google"
+                className="w-36 h-36 object-contain rounded-xl border border-slate-100 flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <div className="font-semibold text-slate-800 text-sm mb-1">📱 Scan to Find Us</div>
+                <p className="text-slate-500 text-xs leading-relaxed">
+                  Scan this QR code to visit our Google listing, leave a review, or get directions to our clinic.
+                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Shop+No.+2+Shreeji+Towers+Jai+Bhavani+Rd+Kamgar+Chowk+N+2+Cidco+Chhatrapati+Sambhajinagar+Maharashtra+431003"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-2 text-xs text-sky-600 font-semibold hover:underline"
+                >
+                  View on Google Maps →
+                </a>
+              </div>
+            </div>
+
+
             <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100" style={{ height: '220px' }}>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0!2d75.3188!3d19.8762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUyJzM0LjMiTiA3NcKwMTknMDcuNyJF!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
@@ -147,7 +171,37 @@ export default function Contact() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Dr. Raktade Dental Implant Center location on Google Maps - Shop No. 2, Shreeji Towers, CIDCO, Chhatrapati Sambhajinagar (Aurangabad)"
+                title="Dr. Raktade Dental Implant Center location on Google Maps - Shop No. 2, Shreeji Towers, CIDCO, Chhatrapati Sambhajinagar"
+              />
+            </div>
+
+            {/* Rajur Branch address */}
+            <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex gap-4 items-start">
+              <div
+                className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center flex-shrink-0"
+                aria-hidden="true"
+              >
+                <MapPin size={20} className="text-white" />
+              </div>
+              <div>
+                <div className="font-semibold text-slate-800 text-sm mb-1">Rajur Branch</div>
+                <p className="text-slate-500 text-sm">Bodkhe Building, in front of Aai Hospital,</p>
+                <p className="text-slate-500 text-sm">Old Tapovan Road, Rajur,</p>
+                <p className="text-slate-500 text-sm">Bhokardan, Jalna.</p>
+              </div>
+            </div>
+
+            {/* Rajur Branch Map embed */}
+            <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100" style={{ height: '220px' }}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.8236!2d75.855248!3d20.055657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1680000000002!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Dr. Raktade Dental Clinic - Rajur Branch location on Google Maps - Bodkhe Building, Old Tapovan Road, Rajur, Bhokardan, Jalna"
               />
             </div>
           </motion.div>
@@ -262,7 +316,7 @@ export default function Contact() {
                   <p className="text-xs text-slate-400 text-center mt-4">
                     Or call us directly at{' '}
                     <a href={`tel:${PHONE}`} className="text-sky-600 font-medium hover:underline">
-                      +91 94043 43961
+                      +91 96048 81999
                     </a>{' '}
                     · Mon–Sat 11 AM – 8 PM
                   </p>

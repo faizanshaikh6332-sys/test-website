@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-full overflow-hidden bg-black flex items-center justify-center">
-                <img src="/tooth.svg" alt="i Dentist Logo" className="w-full h-full object-cover" />
+                <img src="/dr-raktade-logo.png" alt="Dr. Raktade Dental Implant Center Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <div className="font-bold text-white" style={{ fontFamily: 'Outfit, sans-serif' }}>Dr. Raktade Dental Implant Center</div>
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-5">
-              Expert dental implant care with a personal touch. Serving CIDCO and Chhatrapati Sambhajinagar (Aurangabad) with precision, comfort, and trust.
+              Expert dental implant care with a personal touch. Serving CIDCO and Chhatrapati Sambhajinagar with precision, comfort, and trust.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-3">
@@ -114,12 +114,12 @@ export default function Footer() {
             <ul className="space-y-4" role="list">
               <li className="flex gap-3 text-sm text-slate-400">
                 <MapPin size={16} className="text-sky-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <span>Shop No. 2, Shreeji Towers, Jai Bhavani Rd, Kamgar Chowk, N 2, Cidco, Chhatrapati Sambhajinagar (Aurangabad) – 431003</span>
+                <span>Shop No. 2, Shreeji Towers, Jai Bhavani Rd, Kamgar Chowk, N 2, Cidco, Chhatrapati Sambhajinagar – 431003</span>
               </li>
               <li>
-                <a href="tel:+919404343961" className="flex gap-3 text-sm text-slate-400 hover:text-sky-400 transition-colors">
+                <a href="tel:+919604881999" className="flex gap-3 text-sm text-slate-400 hover:text-sky-400 transition-colors">
                   <Phone size={16} className="text-sky-400 flex-shrink-0" aria-hidden="true" />
-                  +91 94043 43961
+                  +91 96048 81999
                 </a>
               </li>
               <li className="flex gap-3 text-sm text-slate-400">
@@ -134,10 +134,10 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-xs text-center sm:text-left">
             © {new Date().getFullYear()} Dr. Raktade Dental Implant Center. All rights reserved. |{' '}
-            <span className="text-slate-400">Best Dental Implant Clinic in Chhatrapati Sambhajinagar (Aurangabad)</span>
+            <span className="text-slate-400">Best Dental Implant Clinic in Chhatrapati Sambhajinagar</span>
           </p>
           <p className="text-slate-600 text-xs">
-            📍 CIDCO, Chhatrapati Sambhajinagar (Aurangabad), Maharashtra
+            📍 CIDCO, Chhatrapati Sambhajinagar, Maharashtra
           </p>
         </div>
 

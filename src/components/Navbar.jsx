@@ -30,33 +30,60 @@ export default function Navbar() {
     <header
       id="navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-          ? 'bg-white/95 backdrop-blur-xl shadow-lg shadow-sky-100/50'
-          : 'bg-transparent'
+        ? 'bg-white/95 backdrop-blur-xl shadow-lg shadow-sky-100/50'
+        : 'bg-transparent'
         }`}
       role="banner"
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <a
-            href="#home"
-            onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
-            className="flex items-center gap-3 group"
-            aria-label="Dr. Raktade Dental Implant Center - Home"
-          >
-            <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
-              <img src="/tooth.svg" alt="i Dentist Logo" className="w-full h-full object-cover" />
-            </div>
-            <div className="hidden sm:block">
-              <div className={`font-bold text-base lg:text-lg leading-tight transition-colors duration-300 ${scrolled ? 'text-slate-800' : 'text-white'}`}
-                style={{ fontFamily: 'Outfit, sans-serif' }}>
-                Dr. Raktade
+          {/* Logo — Dr. Raktade + Curls & Crowns */}
+          <div className="flex items-center gap-3">
+            {/* Brand 1: Dr. Raktade */}
+            <a
+              href="#home"
+              onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
+              className="flex items-center gap-2.5 group"
+              aria-label="Dr. Raktade Dental Implant Center - Home"
+            >
+              <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+                <img src="/dr-raktade-logo.png" alt="Dr. Raktade Logo" className="w-full h-full object-cover" />
               </div>
-              <div className={`text-xs font-medium transition-colors duration-300 ${scrolled ? 'text-sky-600' : 'text-sky-300'}`}>
-                Dental Implant Center
+              <div className="hidden sm:block">
+                <div className={`font-bold text-sm lg:text-base leading-tight transition-colors duration-300 ${scrolled ? 'text-slate-800' : 'text-white'}`}
+                  style={{ fontFamily: 'Outfit, sans-serif' }}>
+                  Dr. Raktade
+                </div>
+                <div className={`text-xs font-medium transition-colors duration-300 ${scrolled ? 'text-sky-600' : 'text-sky-300'}`}>
+                  Dental Implant Center
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+
+            {/* Divider */}
+            <div className={`hidden sm:block w-px h-9 mx-1 ${scrolled ? 'bg-slate-200' : 'bg-white/25'}`} aria-hidden="true" />
+
+            {/* Brand 2: Curls & Crowns */}
+            <a
+              href="#home"
+              onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
+              className="flex items-center gap-2.5 group"
+              aria-label="Curls & Crowns Aesthetic Dental & Hair Transplant Studio"
+            >
+              <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300 bg-[#f5ede7]">
+                <img src="/curls-crowns-logo.png" alt="Curls & Crowns Logo" className="w-full h-full object-contain p-0.5" />
+              </div>
+              <div className="hidden sm:block">
+                <div className={`font-bold text-sm lg:text-base leading-tight transition-colors duration-300 ${scrolled ? 'text-slate-800' : 'text-white'}`}
+                  style={{ fontFamily: 'Outfit, sans-serif' }}>
+                  Curls &amp; Crowns
+                </div>
+                <div className={`text-xs font-semibold tracking-wider uppercase transition-colors duration-300 ${scrolled ? 'text-amber-600' : 'text-amber-300'}`}>
+                  Aesthetic Dental &amp; Hair Studio
+                </div>
+              </div>
+            </a>
+          </div>
 
           {/* Desktop Nav */}
           <ul className="hidden lg:flex items-center gap-8" role="list">
@@ -77,7 +104,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+919404343961"
+              href="tel:+919604881999"
               className={`flex items-center gap-2 text-sm font-medium transition-colors duration-300 ${scrolled ? 'text-slate-600 hover:text-sky-600' : 'text-white/80 hover:text-white'
                 }`}
               aria-label="Call the clinic"
@@ -129,7 +156,7 @@ export default function Navbar() {
             </ul>
             <div className="mt-3 pt-3 border-t border-slate-100 flex flex-col gap-2">
               <a
-                href="tel:+919404343961"
+                href="tel:+919604881999"
                 className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-sky-200 text-sky-600 font-semibold text-sm"
                 aria-label="Call Now"
               >

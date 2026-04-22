@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
 
-const WHATSAPP_NUMBER = '919404343961'
+const WHATSAPP_NUMBER = '919604881999'
 const MESSAGE = `Hello, I'd like to book an appointment at Dr. Raktade Dental Implant Center.`
 
 export default function WhatsAppButton() {

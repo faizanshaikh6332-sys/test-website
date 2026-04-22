@@ -5,7 +5,7 @@ import { Phone, Calendar, ChevronDown, Star } from 'lucide-react'
 const slides = [
   {
     bg: '/clinic-front.jpg',
-    alt: 'Professional dental clinic interior with modern equipment in Chhatrapati Sambhajinagar (Aurangabad)',
+    alt: 'Professional dental clinic interior with modern equipment in Chhatrapati Sambhajinagar',
   },
   {
     bg: '/clinic-interior.jpg',
@@ -85,7 +85,7 @@ export default function Hero() {
                   <Star key={i} size={12} className="text-amber-400 fill-amber-400" aria-hidden="true" />
                 ))}
               </div>
-              <span className="text-white text-sm font-medium">4.8 Rating • 160+ Happy Patients</span>
+              <span className="text-white text-sm font-medium">• 100K+ Happy Patients</span>
             </motion.div>
           </div>
 
@@ -111,7 +111,8 @@ export default function Hero() {
             className="text-white/80 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl"
           >
             Expert diagnosis, precise treatment, and trusted follow-up care for confident smiles.
-            Serving CIDCO & Chhatrapati Sambhajinagar (Aurangabad) with compassionate, state-of-the-art dentistry.
+            Serving CIDCO & Chhatrapati Sambhajinagar and our Rajur branch 
+Bodkhe building , infront of aai hospital , old tapovan road , rajur , bhokardan ,jalna
           </motion.p>
 
           {/* CTAs */}
@@ -134,7 +135,7 @@ export default function Hero() {
               Book Appointment
             </button>
             <a
-              href="tel:+919404343961"
+              href="tel:+919604881999"
               id="hero-call-btn"
               className="group flex items-center gap-3 px-8 py-4 rounded-full text-base font-bold text-white border border-white/30 bg-slate-900/60 backdrop-blur-sm shadow-xl transition-all duration-300 hover:bg-slate-900/80 hover:border-white/60 hover:scale-105 active:scale-95"
               aria-label="Call Dr. Raktade Dental Implant Center"
