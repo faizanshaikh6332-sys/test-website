@@ -76,7 +76,7 @@ const beforeAfterGallery = [
   {
     before: '/before-3.jpg',
     after: '/after-3.jpg',
-    label: 'Smile Design',
+    label: 'Full Mouth Implants',
   },
   {
     before: '/before-4.jpg',
@@ -86,7 +86,7 @@ const beforeAfterGallery = [
   {
     before: '/before-5.jpg',
     after: '/after-5.jpg',
-    label: 'Implants n immediate crown',
+    label: 'Implants and immediate crown',
   },
   {
     before: '/before-6.jpg',
@@ -308,8 +308,8 @@ export default function Services() {
               className="text-2xl sm:text-3xl font-bold text-slate-800 mb-2"
               style={{ fontFamily: 'Outfit, sans-serif' }}
             >
-              Before &{' '}
-              <span className="gradient-text">After Treatment</span>
+              Real Cases. Precise Treatment.{' '}
+              <span className="gradient-text">Predictable Results.</span>
             </h2>
             <p className="text-slate-500 text-sm flex items-center justify-center gap-2">
               <MoveHorizontal size={15} className="text-sky-500" aria-hidden="true" />

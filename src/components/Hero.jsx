@@ -110,9 +110,10 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-white/80 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl"
           >
-            Expert diagnosis, precise treatment, and trusted follow-up care for confident smiles.
-            Serving CIDCO & Chhatrapati Sambhajinagar and our Rajur branch 
-Bodkhe building , infront of aai hospital , old tapovan road , rajur , bhokardan ,jalna
+            Expert diagnosis, precise treatment, and trusted follow-up care for confident smiles.<br /><br />
+            Serving at:<br />
+            • Chhatrapati Sambhajinagar<br />
+            • Rajur, Bhokardan, Jalna
           </motion.p>
 
           {/* CTAs */}

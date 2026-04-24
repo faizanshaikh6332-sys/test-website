@@ -79,7 +79,7 @@ export default function Navbar() {
                   Curls &amp; Crowns
                 </div>
                 <div className={`text-xs font-semibold tracking-wider uppercase transition-colors duration-300 ${scrolled ? 'text-amber-600' : 'text-amber-300'}`}>
-                  Aesthetic Dental &amp; Hair Studio
+                  Aesthetic Dental &amp; Hair Transplant Studio
                 </div>
               </div>
             </a>

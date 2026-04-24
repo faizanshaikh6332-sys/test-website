@@ -94,7 +94,7 @@ export default function About() {
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed mb-8">
-              Our clinic is led by <strong>Dr. Prashant Raktade</strong> — a highly skilled implant specialist along with his team our team is led by Dr.Prashant Raktade and his team of Doctors committed to providing technically correct, timely, and genuinely painless dental care.
+              Under the leadership of <strong>Dr. Prashant Raktade</strong>, a highly skilled implant specialist, our experienced team of doctors is committed to delivering technically precise, timely, and genuinely painless dental care with the highest standards of trust, comfort, and patient care.
             </p>
 
             {/* Highlights grid */}

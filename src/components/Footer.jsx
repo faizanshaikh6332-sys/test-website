@@ -53,7 +53,7 @@ export default function Footer() {
                 <Facebook size={16} />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/dr.raktade?igsh=M3cxZzZ6a3lwZHEw"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-xl bg-white/10 hover:bg-pink-500 flex items-center justify-center transition-colors duration-300"

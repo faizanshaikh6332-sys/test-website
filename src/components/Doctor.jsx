@@ -21,7 +21,7 @@ const highlights = [
   { icon: Award, label: '1500+', sub: 'Implants Placed' },
   { icon: Briefcase, label: '15+', sub: 'Years Experience' },
   { icon: Building2, label: '15+', sub: 'Hospitals' },
-  { icon: Star, label: 'MDS', sub: 'Oral & Max. Surgery' },
+  { icon: Star, label: 'MDS', sub: 'Oral & Maxillofacial. Surgery' },
 ]
 
 export default function Doctor() {
@@ -240,8 +240,10 @@ export default function Doctor() {
             {/* Founder note */}
             <div className="bg-gradient-to-r from-sky-50 to-teal-50 rounded-2xl p-4 border border-sky-100">
               <div className="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Founder</div>
-              <div className="text-slate-700 text-sm font-medium leading-relaxed">
-                Dr. Raktade Dental Implant Center · Dr. Raktade Dental Clinic · Curls & Crowns Aesthetics Studio
+              <div className="text-slate-700 text-sm font-medium leading-relaxed space-y-1">
+                <div>1. Dr. Raktade Dental Implant Center</div>
+                <div>2. Dr. Raktade Dental Clinic</div>
+                <div>3. Curls &amp; Crowns Aesthetic Dental &amp; Hair Transplant Studio</div>
               </div>
             </div>
 
@@ -275,11 +277,11 @@ export default function Doctor() {
               className="text-2xl sm:text-3xl font-bold text-slate-800"
               style={{ fontFamily: 'Outfit, sans-serif' }}
             >
-              Meet Our{' '}
-              <span className="gradient-text">Expert Doctors</span>
+              Meet the Experts{' '}
+              <span className="gradient-text">Behind Your Care</span>
             </h2>
             <p className="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
-              A dedicated team of specialists committed to delivering the highest standard of dental care.
+              Your Trusted Dentists in Chhatrapati Sambhaji Nagar
             </p>
           </div>
 
