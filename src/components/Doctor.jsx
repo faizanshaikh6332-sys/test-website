@@ -321,17 +321,17 @@ export default function Doctor() {
               >
                 {/* Photo / Avatar area */}
                 <div className={`relative aspect-[3/4] bg-gradient-to-br ${doc.color} flex items-center justify-center overflow-hidden`}>
+                  {/* Fallback avatar shown behind image — visible if image fails */}
+                  <div className="absolute inset-0 flex items-center justify-center text-white font-black text-4xl opacity-30 select-none" style={{ fontFamily: 'Outfit, sans-serif' }}>
+                    {doc.avatar}
+                  </div>
                   <img
                     src={doc.photo}
                     alt={doc.name}
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-center z-10"
                     loading="lazy"
                     onError={(e) => { e.target.style.display = 'none' }}
                   />
-                  {/* Fallback avatar shown behind image — visible if image fails */}
-                  <div className="relative z-0 text-white font-black text-4xl opacity-30 select-none" style={{ fontFamily: 'Outfit, sans-serif' }}>
-                    {doc.avatar}
-                  </div>
                   {/* Bottom gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-10" aria-hidden="true" />
                 </div>
