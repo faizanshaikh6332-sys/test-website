@@ -283,7 +283,7 @@ export default function Services() {
           </h2>
           <p className="text-slate-500 text-base max-w-2xl mx-auto leading-relaxed">
             Where Clinical Precision Meets Visible Results.<br />
-            Best Dental Implant in Chhatrapati Sambhaji Nagar
+            Best Dental Implant Clinic in Chhatrapati Sambhaji Nagar
           </p>
         </motion.div>
 

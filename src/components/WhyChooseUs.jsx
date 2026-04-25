@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
             </span>
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mx-auto leading-relaxed">
-            We go beyond dentistry — we build trust, comfort, and lasting relationships with every patient who walks through our doors in CIDCO, Chhatrapati Sambhajinagar.
+            We go beyond dentistry — we build trust, comfort, and lasting relationships with every patient who walks through our doors.
           </p>
         </motion.div>
 
