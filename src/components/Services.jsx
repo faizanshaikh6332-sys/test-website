@@ -282,8 +282,8 @@ export default function Services() {
             <span className="gradient-text">Dental Need</span>
           </h2>
           <p className="text-slate-500 text-base max-w-2xl mx-auto leading-relaxed">
-            From single implants to full smile transformations — Dr. Raktade provides expert, painless,
-            and technically precise dental treatments in Chhatrapati Sambhajinagar.
+            Where Clinical Precision Meets Visible Results.<br />
+            Best Dental Implant in Chhatrapati Sambhaji Nagar
           </p>
         </motion.div>
 
