@@ -65,8 +65,9 @@ export default function Navbar() {
 
             {/* Brand 2: Curls & Crowns */}
             <a
-              href="#home"
-              onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
+              href="https://curlsncrowns.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2.5 group"
               aria-label="Curls & Crowns Aesthetic Dental & Hair Transplant Studio"
             >
