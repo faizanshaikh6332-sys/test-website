@@ -61,9 +61,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-36">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
           {/* Badges */}
-          <div className="flex flex-wrap gap-3 mb-6">
+          <div className="flex flex-wrap gap-3 mb-6 justify-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500/20 to-teal-500/20 backdrop-blur-md border border-white/20 rounded-full px-4 py-2"
             >
               <span className="text-sky-300" aria-hidden="true">✦</span>
-              <span className="text-white text-sm font-semibold tracking-wide">Best dental clinic in Chhatrapati Sambhajinagar</span>
+              <span className="text-white text-sm font-semibold tracking-widest uppercase">Best dental clinic in Chhatrapati Sambhajinagar</span>
             </motion.div>
 
             <motion.div
@@ -94,13 +94,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight mb-5"
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
-            Advanced Dental Implants &{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-teal-300">
-              Painless Dental Care
-            </span>
+            Advanced{' '}
+            <span className="italic" style={{ color: '#5ecdc8' }}>Dental</span>
+            {' '}Implants &amp;{' '}
+            <span className="italic" style={{ color: '#5ecdc8' }}>Painless</span>{' '}
+            Care
           </motion.h1>
 
           {/* Sub */}
@@ -108,7 +109,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-white/80 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl"
+            className="text-white/80 text-base sm:text-lg lg:text-xl leading-relaxed mb-8 max-w-2xl mx-auto"
+            style={{ fontFamily: 'Inter, sans-serif' }}
           >
             Expert diagnosis, precise treatment, and trusted follow-up care for confident smiles.<br /><br />
             Serving at:<br />
@@ -121,7 +123,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.65, duration: 0.6 }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-4"
           >
             <button
               id="hero-book-btn"
