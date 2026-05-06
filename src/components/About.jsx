@@ -87,7 +87,7 @@ export default function About() {
             <h2
               id="about-heading"
               className="text-3xl sm:text-4xl font-bold text-slate-800 leading-tight mb-5"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: '"Playfair Display", serif' }}
             >
               Expert Implant Care with a{' '}
               <span className="gradient-text">Personal Touch</span>

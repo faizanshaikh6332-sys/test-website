@@ -45,7 +45,7 @@ export default function Doctor() {
           <h2
             id="doctor-heading"
             className="text-3xl sm:text-4xl font-bold text-slate-800"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
             Expert Care You Can{' '}
             <span className="gradient-text">Trust</span>
@@ -275,7 +275,7 @@ export default function Doctor() {
             </div>
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-800"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: '"Playfair Display", serif' }}
             >
               Meet the Experts{' '}
               <span className="gradient-text">Behind Your Care</span>

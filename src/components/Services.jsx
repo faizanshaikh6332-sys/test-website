@@ -276,7 +276,7 @@ export default function Services() {
           <h2
             id="services-heading"
             className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
             Comprehensive Care for Every{' '}
             <span className="gradient-text">Dental Need</span>
@@ -306,7 +306,7 @@ export default function Services() {
           <div className="text-center mb-10">
             <h2
               className="text-2xl sm:text-3xl font-bold text-slate-800 mb-2"
-              style={{ fontFamily: 'Outfit, sans-serif' }}
+              style={{ fontFamily: '"Playfair Display", serif' }}
             >
               Real Cases. Precise Treatment.{' '}
               <span className="gradient-text">Predictable Results.</span>

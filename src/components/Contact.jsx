@@ -69,7 +69,7 @@ export default function Contact() {
           <h2
             id="contact-heading"
             className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
             Book Your Appointment{' '}
             <span className="gradient-text">Today</span>

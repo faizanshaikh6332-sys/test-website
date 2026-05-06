@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
           <h2
             id="why-us-heading"
             className="text-3xl sm:text-4xl font-bold text-white mb-4"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
             The Dr. Raktade{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-teal-400">

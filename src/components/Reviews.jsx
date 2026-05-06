@@ -105,7 +105,7 @@ export default function Reviews() {
           <h2
             id="reviews-heading"
             className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4"
-            style={{ fontFamily: 'Outfit, sans-serif' }}
+            style={{ fontFamily: '"Playfair Display", serif' }}
           >
             What Our Patients{' '}
             <span className="gradient-text">Say About Us</span>
