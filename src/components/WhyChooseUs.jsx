@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
         <div className="absolute top-1/2 left-0 w-64 h-64 rounded-full bg-sky-400/5 blur-2xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

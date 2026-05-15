@@ -259,7 +259,7 @@ export default function Services() {
 
   return (
     <section id="services" className="section-pad bg-slate-50" aria-labelledby="services-heading">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section header */}
         <motion.div

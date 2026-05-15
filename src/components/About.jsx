@@ -14,7 +14,7 @@ export default function About() {
 
   return (
     <section id="about" ref={ref} className="section-pad bg-white" aria-labelledby="about-heading">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Image column */}
           <motion.div

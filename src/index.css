@@ -120,12 +120,24 @@ body {
 
 /* Section padding */
 .section-pad {
-  padding: 5rem 1.5rem;
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-pad {
+    padding: 5rem 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .section-pad {
     padding: 6rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding: 6rem 3rem;
   }
 }
 

@@ -29,7 +29,7 @@ export default function Doctor() {
 
   return (
     <section id="doctor" ref={ref} className="section-pad bg-gradient-to-br from-sky-50 via-white to-teal-50" aria-labelledby="doctor-heading">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section label */}
         <motion.div
