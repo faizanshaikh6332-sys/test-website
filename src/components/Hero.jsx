@@ -61,7 +61,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-36">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Badges */}
           <div className="flex flex-wrap gap-3 mb-6 justify-center">
             <motion.div
@@ -94,7 +94,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.35, duration: 0.7 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight mb-5"
+            className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-tight mb-5 text-center"
             style={{ fontFamily: '"Playfair Display", serif' }}
           >
             Advanced{' '}
