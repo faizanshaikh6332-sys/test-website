@@ -137,30 +137,6 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* Google QR Code */}
-            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 flex items-center gap-6">
-              <img
-                src="/google-qr.png"
-                alt="Scan QR code to find Dr. Raktade Dental Implant Center on Google"
-                className="w-36 h-36 object-contain rounded-xl border border-slate-100 flex-shrink-0"
-                loading="lazy"
-              />
-              <div>
-                <div className="font-semibold text-slate-800 text-sm mb-1">📱 Scan to Find Us</div>
-                <p className="text-slate-500 text-xs leading-relaxed">
-                  Scan this QR code to visit our Google listing, leave a review, or get directions to our clinic.
-                </p>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Shop+No.+2+Shreeji+Towers+Jai+Bhavani+Rd+Kamgar+Chowk+N+2+Cidco+Chhatrapati+Sambhajinagar+Maharashtra+431003"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-2 text-xs text-sky-600 font-semibold hover:underline"
-                >
-                  View on Google Maps →
-                </a>
-              </div>
-            </div>
-
 
             <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100" style={{ height: '220px' }}>
               <iframe
