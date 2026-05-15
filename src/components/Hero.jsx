@@ -155,7 +155,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.85, duration: 0.6 }}
-            className="mt-10 flex flex-wrap items-center gap-6"
+            className="mt-10 flex flex-wrap items-center justify-center gap-6"
           >
             {[
               { num: '1500+', label: 'Implants Done' },

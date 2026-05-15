@@ -78,6 +78,7 @@ export default function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
+            className="text-center lg:text-left"
           >
             <div className="inline-flex items-center gap-2 bg-sky-50 text-sky-600 px-4 py-1.5 rounded-full text-sm font-semibold mb-4">
               <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" aria-hidden="true" />

@@ -144,7 +144,7 @@ export default function Doctor() {
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
-            className="space-y-7"
+            className="space-y-7 text-center lg:text-left"
           >
             {/* Name & title */}
             <div>
@@ -157,7 +157,7 @@ export default function Doctor() {
                   Oral & Maxillofacial Surgeon · Advanced Implantology Specialist
                 </span>
               </h3>
-              <div className="flex items-center gap-2 mt-2 text-slate-500 text-sm">
+              <div className="flex items-center justify-center lg:justify-start gap-2 mt-2 text-slate-500 text-sm">
                 <MapPin size={14} className="text-sky-500 flex-shrink-0" />
                 Chhatrapati Sambhajinagar, Maharashtra
               </div>
@@ -198,7 +198,7 @@ export default function Doctor() {
 
             {/* Education */}
             <div>
-              <h4 className="font-bold text-slate-700 text-sm uppercase tracking-wider mb-3 flex items-center gap-2">
+              <h4 className="font-bold text-slate-700 text-sm uppercase tracking-wider mb-3 flex items-center justify-center lg:justify-start gap-2">
                 <GraduationCap size={16} className="text-sky-500" />
                 Education
               </h4>
@@ -217,7 +217,7 @@ export default function Doctor() {
 
             {/* Experience */}
             <div>
-              <h4 className="font-bold text-slate-700 text-sm uppercase tracking-wider mb-3 flex items-center gap-2">
+              <h4 className="font-bold text-slate-700 text-sm uppercase tracking-wider mb-3 flex items-center justify-center lg:justify-start gap-2">
                 <Briefcase size={16} className="text-sky-500" />
                 Experience
               </h4>
@@ -247,16 +247,17 @@ export default function Doctor() {
               </div>
             </div>
 
-            {/* CTA */}
-            <a
-              href="#contact"
-              id="doctor-book-btn"
-              onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
-              className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-base font-semibold shadow-lg shadow-sky-200"
-              aria-label="Book a consultation with Dr. Prashant Raktade"
-            >
-              <span>Book a Consultation</span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a
+                href="#contact"
+                id="doctor-book-btn"
+                onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }) }}
+                className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-base font-semibold shadow-lg shadow-sky-200"
+                aria-label="Book a consultation with Dr. Prashant Raktade"
+              >
+                <span>Book a Consultation</span>
+              </a>
+            </div>
           </motion.div>
 
         </div>
