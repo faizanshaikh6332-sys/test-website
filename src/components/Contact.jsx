@@ -137,48 +137,55 @@ export default function Contact() {
               </a>
             </div>
 
+            {/* Maps side by side */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-            <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100" style={{ height: '220px' }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0!2d75.3188!3d19.8762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUyJzM0LjMiTiA3NcKwMTknMDcuNyJF!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Dr. Raktade Dental Implant Center location on Google Maps - Shop No. 2, Shreeji Towers, CIDCO, Chhatrapati Sambhajinagar"
-              />
-            </div>
-
-            {/* Rajur Branch address */}
-            <div className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex gap-4 items-start">
-              <div
-                className="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center flex-shrink-0"
-                aria-hidden="true"
-              >
-                <MapPin size={20} className="text-white" />
+              {/* CIDCO Branch Map */}
+              <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+                <div style={{ height: '220px' }}>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.0!2d75.3188!3d19.8762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDUyJzM0LjMiTiA3NcKwMTknMDcuNyJF!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Dr. Raktade Dental Implant Center - CIDCO Branch"
+                  />
+                </div>
+                <a
+                  href="https://www.google.com/maps/place/Dr.+Raktade+Dental+Implant+Center/@19.868287,75.3669447,21z/data=!4m14!1m7!3m6!1s0x3bdba2ab8a0b32a9:0xeaff178212dab932!2sDr.+Raktade+Dental+Implant+Center!8m2!3d19.8684336!4d75.3672883!16s%2Fg%2F11bw7_37jf!3m5!1s0x3bdba2ab8a0b32a9:0xeaff178212dab932!8m2!3d19.8684336!4d75.3672883!16s%2Fg%2F11bw7_37jf?entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-sky-50 hover:bg-sky-100 text-sky-600 font-semibold text-sm py-2.5 transition-colors duration-200"
+                  aria-label="Open Dr. Raktade Dental Clinic CIDCO location in Google Maps"
+                >
+                  <MapPin size={14} />
+                  Open in Google Maps
+                </a>
               </div>
-              <div>
-                <div className="font-semibold text-slate-800 text-sm mb-1">Rajur Branch</div>
-                <p className="text-slate-500 text-sm">Bodkhe Building, in front of Aai Hospital,</p>
-                <p className="text-slate-500 text-sm">Old Tapovan Road, Rajur,</p>
-                <p className="text-slate-500 text-sm">Bhokardan, Jalna.</p>
-              </div>
-            </div>
 
-            {/* Rajur Branch Map embed */}
-            <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100" style={{ height: '220px' }}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.8236!2d75.855248!3d20.055657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1680000000002!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Dr. Raktade Dental Clinic - Rajur Branch location on Google Maps - Bodkhe Building, Old Tapovan Road, Rajur, Bhokardan, Jalna"
-              />
+              {/* Rajur Branch Map */}
+              <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100">
+                <div style={{ height: '220px' }}>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.8236!2d75.855248!3d20.055657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1680000000002!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Dr. Raktade Dental Clinic - Rajur Branch"
+                  />
+                </div>
+                <div className="flex items-center justify-center gap-2 bg-amber-50 text-amber-700 font-semibold text-sm py-2.5">
+                  <MapPin size={14} />
+                  Rajur Branch — Bhokardan, Jalna
+                </div>
+              </div>
+
             </div>
           </motion.div>
 
