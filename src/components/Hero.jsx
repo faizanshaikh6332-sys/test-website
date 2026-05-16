@@ -60,8 +60,8 @@ export default function Hero() {
       <div className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-teal-500/10 blur-3xl" aria-hidden="true" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-36">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-32 pt-36 flex flex-col items-center">
+        <div className="w-full max-w-4xl text-center">
           {/* Badges */}
           <div className="flex flex-wrap gap-3 mb-6 justify-center">
             <motion.div
