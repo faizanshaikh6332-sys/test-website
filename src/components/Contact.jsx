@@ -180,10 +180,16 @@ export default function Contact() {
                     title="Dr. Raktade Dental Clinic - Rajur Branch"
                   />
                 </div>
-                <div className="flex items-center justify-center gap-2 bg-amber-50 text-amber-700 font-semibold text-sm py-2.5">
+                <a
+                  href="https://www.google.com/maps/place/Dr.+Raktade+Dental+clinic/@20.0555099,75.8553018,17z/data=!3m1!4b1!4m6!3m5!1s0x3bda49753ce2e273:0xb79c4fe03d64117b!8m2!3d20.0555099!4d75.8553018!16s%2Fg%2F11ywbr79w6!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-700 font-semibold text-sm py-2.5 transition-colors duration-200"
+                  aria-label="Open Dr. Raktade Dental Clinic Rajur Branch in Google Maps"
+                >
                   <MapPin size={14} />
-                  Rajur Branch — Bhokardan, Jalna
-                </div>
+                  Open in Google Maps
+                </a>
               </div>
 
             </div>
